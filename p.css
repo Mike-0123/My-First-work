@@ -2,6 +2,8 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #D9D9D9;
+    letter-spacing: 2px;
+    
   }
   
   .topnav {
@@ -37,9 +39,10 @@ body {
   }
   .hello{
    line-height: 45px;
+   letter-spacing: 2px;
   }
   button{
-    background-color: aquamarine;
+    background-color: rgb(28, 170, 214);
     width: 170px;
     height: 30px;
     margin: 16px 20px;
@@ -59,10 +62,11 @@ body {
 .content1{
   display: inline-block;
   width: 600px;
+  width:50%;
   
 }
 .content2{
- width: 50%;
+ width:50%;
  display: auto;
  padding-left: 600px;
  width: 500px;
@@ -70,4 +74,115 @@ body {
 .content{
   margin-left: 100px;
   padding-top: 120px;
+  font-size: 18px;
+  justify-content: space-between;
+  letter-spacing: 2px;
+}
+.project h3{
+  text-align: center;
+  text-decoration: underline;
+}
+.project{
+  display: inline block;
+}
+.photo1{
+  display:flex;
+  margin: 30px 50px;
+}
+.photo1 img{
+  margin: 30px 20px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  letter-spacing: 2px;
+  padding-left: 20px;
+}
+
+.contact-form {
+  width: 45%; 
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.photo {
+  width: 20%; 
+}
+
+.photo img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  border-radius: 50%;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(28, 170, 214);
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.footer-section h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.footer-section p {
+  font-size: 0.9em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff; 
+}
+span{
+  background-color: rgb(28, 170, 214);
+  border-radius: 5px;
 }
