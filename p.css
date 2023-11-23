@@ -38,7 +38,6 @@ body {
     color: rgb(28, 170, 214);
   }
   .hello{
-   line-height: 45px;
    letter-spacing: 2px;
   }
   button{
@@ -62,21 +61,20 @@ body {
 .content1{
   display: inline-block;
   width: 600px;
-  width:50%;
+  width:40%;
   
 }
 .content2{
- width:50%;
  display: auto;
  padding-left: 600px;
  width: 500px;
+ height: 100px;
 }
 .content{
   margin-left: 100px;
   padding-top: 120px;
-  font-size: 18px;
-  justify-content: space-between;
   letter-spacing: 2px;
+ 
 }
 .project h3{
   text-align: center;
@@ -84,6 +82,7 @@ body {
 }
 .project{
   display: inline block;
+  padding-bottom: 100px;
 }
 .photo1{
   display:flex;
@@ -185,4 +184,30 @@ footer {
 span{
   background-color: rgb(28, 170, 214);
   border-radius: 5px;
+}
+.content-control{
+  padding: top -12px;
+}
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.testimonial {
+  text-align: center;
+  width: 30%; /* Adjust width as needed */
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.author {
+  font-weight: bold;
+}
+.testimonial{
+  text-align: center;
 }
