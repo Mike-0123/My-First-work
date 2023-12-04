@@ -4,6 +4,7 @@ body {
     background-color: #D9D9D9;
     letter-spacing: 2px;
     font-size: 20px;
+  
     
   }
   
@@ -243,4 +244,15 @@ span{
   height: 20px;
   border-radius: 5px;
   background-color: #4caf50;
+}
+@media (max-width: 550px)
+{
+  .topnav {
+    overflow: hidden;
+    background-color: #ddd;
+    position: fixed;
+    top: 0;
+    width: 100%;
+ display: none;
+  }
 }
