@@ -14,6 +14,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+    align-items: stretch;
   
     
   }
@@ -35,16 +36,6 @@ body {
     rotate: 30deg;
     background-color:  rgb(28, 170, 214);
   }
-
-  .php .javascript .css .html .designer{
-    width: 200px;
-    height: 20px;
-    background-color: orange;
-    border-radius: 5px;
-    border: 1px solid black;
-    margin-left: 100px;
-    display: inline-block;
-  }
   .topnav a.active {
     background-color: #cbcbcb;
     color: white;
@@ -56,9 +47,32 @@ body {
     font-size: 20px;
     color: rgb(28, 170, 214);
   }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 15px;
+    justify-content: stretch;
+    
+  }
+  .profimg{
+    flex: 30%;
+    width: 50px;
+    height: 50px;
+    padding-top: 50px;
+    
+  }
+  .byose{
+    flex: 70%;
+    top: 0;
+    padding-top: 0px;
+    width: 50%;
+    font-size: 15px;
+    margin-left: 20px;
+  }
   .hello{
-   letter-spacing: 2px;
-   width: 40%;
+    line-height: 45px;
   }
   button{
     background-color: rgb(28, 170, 214);
@@ -74,27 +88,40 @@ body {
   .img1{
     float: right;
     display: auto;
-    bottom: 0px;
-    padding-right:100px;
     border-radius: 50%;
   }
+.row1{
+  display: flex;
+  justify-content: space-between;
+}
 .content1{
-  display: inline-block;
-  width: 600px;
- 
-  
+  flex: 60%;
+  font-size: 15px;
+  justify-content: flex-start;
+  width:100px;
+  line-height: 25px;
 }
 .content2{
- display: auto;
- padding-left: 600px;
- width: 500px;
- height: 100px;
+  flex: 40%;
+  font-size: 15px;
+  justify-content: flex-end;
+  width: 600px;
+  padding-top: 90px;
+  line-height: 25px;
 }
-.content{
-  margin-left: 100px;
-  padding-top: 120px;
-  letter-spacing: 2px;
- 
+.testimonials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+/*.testimonial::after{
+  content: "||";
+}
+*/
+.author{
+  text-decoration: underline;
 }
 .project h3{
   text-align: center;
@@ -104,11 +131,11 @@ body {
   display: inline block;
   padding-bottom: 100px;
 }
-.photo1{
+.row2{
   display:flex;
   margin: 10px 50px ;
 }
-.photo1 img{
+.row2 img{
   margin: 30px 20px;
 }
 .container {
@@ -149,12 +176,12 @@ button {
   cursor: pointer;
 }
 
-.photo {
+.photoform {
   width: 20%; 
   padding-left: 200px;
 }
 
-.photo img {
+.photoform img {
   max-width: 100%;
   height: auto;
   display: block;
@@ -206,18 +233,6 @@ span{
   background-color: rgb(28, 170, 214);
   border-radius: 5px;
 }
-.testimonials {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.testimonial {
-  text-align: center;
-  
-}
-
 .quote {
   font-style: italic;
   margin-bottom: 10px;
@@ -229,30 +244,48 @@ span{
 .testimonial{
   text-align: center;
 }
-.progress-wrapper {
-  margin-bottom: 20px;
-}
 
-.progress {
-  width: 100%;
-  background-color: #f3f3f3;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-.progress-bar {
-  height: 20px;
-  border-radius: 5px;
-  background-color: #4caf50;
-}
-@media (max-width: 550px)
+@media (max-width:900px)
 {
-  .topnav {
-    overflow: hidden;
-    background-color: #ddd;
-    position: fixed;
-    top: 0;
+  .row{
+    flex-direction: column;
+    justify-content: center;
+   
+  }
+  .profimg{
+   display: none;
+  }
+  .byose{
+    font-size: 15px;
+    line-height: none;
     width: 100%;
- display: none;
+  }
+  .topnav{
+    display: none;
+  }
+  .row1{
+    flex-direction: column;
+  }
+  .content1{
+    width: 100%;
+  }
+  .row2{
+    flex-direction: column;
+  }
+  .container{
+    flex-direction: column;
+  }
+  footer{
+    flex-direction: column;
+  }
+  .testimonials{
+    flex-direction: column;
+  }
+  .photoform{
+    display: none;
+  }
+  .container::before{
+    content: url(222007619\ ITWITAHO\ Michel.jpeg);
+
   }
 }
